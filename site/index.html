@@ -106,6 +106,15 @@
 
   footer{border-top:1px solid var(--line);padding:32px 0 48px;color:var(--mut);font-size:14px}
   footer p{margin:6px 0}
+  .btn.red{background:#d8442f;border-color:#d8442f;color:#fff}
+  .btn.red:hover{background:#ee5a43;border-color:#ee5a43}
+  .erro{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;background:var(--panel);border:2px solid #d8442f;padding:28px}
+  @media(max-width:860px){.erro{grid-template-columns:1fr}}
+  .erro h3{margin:0 0 8px}
+  .erro ol{margin:8px 0 0;padding-left:22px}
+  .erro li{margin:6px 0}
+  .erro .side{display:flex;flex-direction:column;gap:12px;justify-content:center}
+  .erro .side p{margin:0;color:var(--mut);font-size:14px}
 </style>
 </head>
 <body>
@@ -115,6 +124,7 @@
   <a class="l" href="#jogar">Como jogar</a>
   <a class="l" href="#controles">Controles</a>
   <a class="l" href="#creditos">Créditos</a>
+  <a class="l" href="#erro">Reportar erro</a>
   <a class="l" href="#apoie">Apoie</a>
   <a class="l" href="https://github.com/portretrogames/smw-ps2">GitHub</a>
 </div></nav>
@@ -206,7 +216,27 @@
       <li><kbd>L2</kbd> + <kbd>R2</kbd> + <kbd>SELECT</kbd> lista de trapaças</li>
       <li><kbd>L2</kbd> + <kbd>R2</kbd> + <kbd>△</kbd> medidor de desempenho</li>
     </ul>
-    <div class="note">Projeto em beta. Os menus do título, dos arquivos, de continuar e de salvar ainda estão em inglês. Achou um erro? <a href="https://github.com/portretrogames/smw-ps2/issues">Abra uma issue</a> com o <code>SMW_LOG.TXT</code>.</div>
+    <div class="note">Projeto em beta. Os menus do título, dos arquivos, de continuar e de salvar ainda estão em inglês. Achou um erro? <a href="#erro">Reporte aqui</a> com o <code>SMW_LOG.TXT</code>.</div>
+  </div>
+</div></section>
+
+<section id="erro"><div class="wrap">
+  <h2><small>Reportar erro</small>Achou um problema? Conte para a gente</h2>
+  <p class="sub">Cada relato vira uma página pública no GitHub onde você manda fotos, vídeos e o log, e acompanha a correção.</p>
+  <div class="erro">
+    <div>
+      <h3>Como mandar um bom relato</h3>
+      <ol>
+        <li>Tire uma <b>foto da tela</b> com o erro (ou grave um vídeo curto).</li>
+        <li>Pegue o <b>log</b>: o port grava o <code>SMW_LOG.TXT</code> ao lado do jogo no pendrive (ou na pasta SMWPS2 do memory card, se o jogo foi aberto pela ISO ou salva no cartão).</li>
+        <li>Clique em <b>Reportar erro</b>, preencha o formulário e <b>arraste</b> as fotos, os vídeos e o log para a última caixa.</li>
+      </ol>
+    </div>
+    <div class="side">
+      <a class="btn red" href="https://github.com/portretrogames/smw-ps2/issues/new?template=erro.yml">Reportar erro</a>
+      <a class="btn ghost" href="https://github.com/portretrogames/smw-ps2/issues">Ver erros já relatados</a>
+      <p>É preciso uma conta no GitHub (gratuita). Aceita imagens, vídeos curtos, <code>.txt</code> e <code>.zip</code> de até 25 MB.</p>
+    </div>
   </div>
 </div></section>
 
